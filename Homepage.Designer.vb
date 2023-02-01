@@ -24,30 +24,67 @@ Partial Class Homepage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Homepage))
         Me.btnHome = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblTitle = New System.Windows.Forms.Label()
+        Me.lblYearGroup = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnHome
         '
         Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
         Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
-        Me.btnHome.Location = New System.Drawing.Point(1258, 12)
+        Me.btnHome.Location = New System.Drawing.Point(1236, 12)
         Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(80, 77)
+        Me.btnHome.Size = New System.Drawing.Size(102, 101)
         Me.btnHome.TabIndex = 0
         Me.btnHome.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnHome.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblTitle
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(311, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(691, 77)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "YGS - Progression Step Monitor"
+        Me.lblTitle.AutoSize = True
+        Me.lblTitle.BackColor = System.Drawing.Color.Transparent
+        Me.lblTitle.Font = New System.Drawing.Font("Bahnschrift Condensed", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblTitle.Location = New System.Drawing.Point(107, 12)
+        Me.lblTitle.Name = "lblTitle"
+        Me.lblTitle.Size = New System.Drawing.Size(852, 77)
+        Me.lblTitle.TabIndex = 1
+        Me.lblTitle.Text = "YGS - Progression Step Monitoring Tool"
+        '
+        'lblYearGroup
+        '
+        Me.lblYearGroup.AutoSize = True
+        Me.lblYearGroup.BackColor = System.Drawing.Color.Transparent
+        Me.lblYearGroup.Font = New System.Drawing.Font("Bahnschrift Condensed", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblYearGroup.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.lblYearGroup.Location = New System.Drawing.Point(24, 116)
+        Me.lblYearGroup.Name = "lblYearGroup"
+        Me.lblYearGroup.Size = New System.Drawing.Size(325, 58)
+        Me.lblYearGroup.TabIndex = 2
+        Me.lblYearGroup.Text = "Choose Year Group:"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.PowderBlue
+        Me.PictureBox1.Location = New System.Drawing.Point(24, 103)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1189, 10)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(24, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(77, 82)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 4
+        Me.PictureBox2.TabStop = False
         '
         'Homepage
         '
@@ -55,17 +92,25 @@ Partial Class Homepage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.ClientSize = New System.Drawing.Size(1350, 729)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.lblYearGroup)
+        Me.Controls.Add(Me.lblTitle)
         Me.Controls.Add(Me.btnHome)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Homepage"
         Me.Text = "Ysgol Greenhill School - Progress Step Monitor"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btnHome As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblTitle As Label
+    Friend WithEvents lblYearGroup As Label
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
