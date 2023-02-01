@@ -30,9 +30,9 @@ Partial Class Homepage
         '
         Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point)
         Me.btnHome.Image = CType(resources.GetObject("btnHome.Image"), System.Drawing.Image)
-        Me.btnHome.Location = New System.Drawing.Point(707, 12)
+        Me.btnHome.Location = New System.Drawing.Point(708, 12)
         Me.btnHome.Name = "btnHome"
-        Me.btnHome.Size = New System.Drawing.Size(81, 78)
+        Me.btnHome.Size = New System.Drawing.Size(80, 77)
         Me.btnHome.TabIndex = 0
         Me.btnHome.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnHome.UseVisualStyleBackColor = True
