@@ -91,14 +91,15 @@ Partial Class Homepage
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(35, 249)
+        Me.Button1.Location = New System.Drawing.Point(45, 249)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(282, 135)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Year 7"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
